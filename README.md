@@ -1,4 +1,12 @@
-## 🎛️ Available Styles
+# 📱 Platform Support
+
+designed for .NET MAUI and supports:
+- ✅ iOS
+- ✅ Android  
+- ✅ Windows
+
+
+# 🎛️ Available Styles
 
 ### Text Controls
 - `ThemeLabelStyle` - Default label styling
@@ -37,16 +45,11 @@
 - `ThemeTabbedPageStyle` - Tab bar styling
 - `ThemeShellStyle` - Shell navigation styling
 
-## 📱 Platform Support
-
-designed for .NET MAUI and supports:
-- ✅ iOS
-- ✅ Android  
-- ✅ Windows
-
-
+# MODES
 
 # 🌊 OceanMode Theme
+
+![Ocean Mode Preview](docs/darkmode.png)
 
 *"Like water, be fluid. Like the ocean, be deep. Like waves, keep moving forward."* 🌊
 
@@ -90,3 +93,127 @@ The ocean theme promotes:
 - **Freshness & Energy**: Bright turquoise adds vitality
 - **Clarity & Focus**: Clean whites and light backgrounds
 - **Growth & Harmony**: Natural blue-green palette
+
+# ☀️ LightMode Theme
+
+![Light Mode Preview](docs/lightmode.png)
+
+A clean, modern theme designed for **readability and clarity** in bright environments.  
+
+## 🎨 Color Palette
+
+Hex       | Usage              
+----------|--------------------
+`#FFFFFF` | Primary Background 
+`#F8F9FA` | Secondary Background  
+`#F1F3F4` | Tertiary Background  
+`#FFFFFF` | Card Background  
+`#FAFBFC` | Surface Background  
+`#212529` | Primary Text  
+`#6C757D` | Secondary Text  
+`#ADB5BD` | Disabled Text  
+`#9CA3AF` | Hint Text  
+`#0066CC` | Primary Accent  
+`#004499` | Secondary Accent  
+`#3385D6` | Hover Accent  
+`#004080` | Pressed Accent  
+
+
+# 🌑 DarkMode Theme
+
+![Dark Mode Preview](docs/darkmode.png)
+
+A sleek theme optimized for **low-light readability** and reduced eye strain.  
+
+## 🎨 Color Palette
+
+Hex       | Usage              
+----------|--------------------
+`#121212` | Primary Background  
+`#1E1E1E` | Secondary Background  
+`#2D2D30` | Tertiary Background  
+`#252526` | Card Background  
+`#3C3C3C` | Surface Background  
+`#FFFFFF` | Primary Text  
+`#B3B3B3` | Secondary Text  
+`#6D6D6D` | Disabled Text  
+`#808080` | Hint Text  
+`#0078D4` | Primary Accent  
+`#106EBE` | Secondary Accent  
+`#1F8AD6` | Hover Accent  
+`#0F5F9F` | Pressed Accent  
+
+
+# 🤖 AndroidMode Theme
+
+![Android Mode Preview](docs/androidmode.png)
+
+A Material Design 3 inspired palette with **dynamic accents and familiar Android feel**.  
+
+## 🎨 Color Palette
+
+Hex       | Usage              
+----------|--------------------
+`#FFFBFE` | Primary Background  
+`#F7F2FA` | Secondary Background  
+`#FEF7FF` | Tertiary Background  
+`#FFFFFF` | Card Background  
+`#F7F2FA` | Surface Background  
+`#1C1B1F` | Primary Text  
+`#49454F` | Secondary Text  
+`#C4C7C5` | Disabled Text  
+`#79747E` | Hint Text  
+`#6750A4` | Primary Accent  
+`#958DA5` | Secondary Accent  
+`#7F67BE` | Hover Accent  
+`#4F378B` | Pressed Accent  
+
+
+# 🍏 iOSMode Theme
+
+![iOS Mode Preview](docs/iosmode.png)
+
+Designed with **iOS system colors** for a **native Cupertino feel**.  
+
+## 🎨 Color Palette
+
+Hex       | Usage              
+----------|--------------------
+`#F2F2F7` | Primary Background  
+`#FFFFFF` | Secondary Background  
+`#FFFFFF` | Tertiary Background  
+`#FFFFFF` | Card Background  
+`#F9F9F9` | Surface Background  
+`#000000` | Primary Text  
+`#8E8E93` | Secondary Text  
+`#C7C7CC` | Disabled Text  
+`#8E8E93` | Hint Text  
+`#007AFF` | Primary Accent  
+`#5856D6` | Secondary Accent  
+`#0051D5` | Hover Accent  
+`#004CCC` | Pressed Accent  
+
+
+# 🪟 WinUIMode Theme
+
+![WinUI Mode Preview](docs/winuimode.png)
+
+Inspired by **Windows Fluent Design**, providing crisp, accessible contrast and familiar UI cues.  
+
+## 🎨 Color Palette
+
+Hex       | Usage              
+----------|--------------------
+`#F3F3F3` | Primary Background  
+`#FFFFFF` | Secondary Background  
+`#F9F9F9` | Tertiary Background  
+`#FFFFFF` | Card Background  
+`#F5F5F5` | Surface Background  
+`#000000` | Primary Text  
+`#666666` | Secondary Text  
+`#CCCCCC` | Disabled Text  
+`#999999` | Hint Text  
+`#0078D4` | Primary Accent  
+`#005A9E` | Secondary Accent  
+`#106EBE` | Hover Accent  
+`#004578` | Pressed Accent  
