@@ -1,4 +1,4 @@
-﻿namespace ThemeMode;
+﻿namespace ThemeMode.Services;
 
 public interface IThemeService
 {

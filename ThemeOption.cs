@@ -5,4 +5,5 @@ public enum ThemeOption
     System = 'S',
     Dark = 'D',
     Light = 'L',
+    Ocean = 'O',
 }

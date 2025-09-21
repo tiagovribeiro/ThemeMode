@@ -1,12 +1,13 @@
-﻿namespace ThemeMode;
+﻿namespace ThemeMode.Services;
 
 internal sealed class ThemeService : IThemeService
 {
     private static List<ThemeMode> ThemeOptionsList => new()
     {
+        new ThemeMode("System", "📱", ThemeOption.System),
         new ThemeMode("Light", "☀️", ThemeOption.Light),
         new ThemeMode("Dark", "🌙", ThemeOption.Dark),
-        new ThemeMode("System", "📱", ThemeOption.System)
+        new ThemeMode("Dark", "🌊", ThemeOption.Ocean)
     };
 
     private const string ThemeOptionPreference = "ThemeOptionPreferences";
@@ -76,29 +77,33 @@ internal sealed class ThemeService : IThemeService
                 Source = new Uri("Resources/Styles/LightMode.xaml", UriKind.Relative)
             });
         }
+        else if (ThemeOption == ThemeOption.Light)
+        {
+            mergedDictionaries?.Add(new ResourceDictionary
+            {
+                Source = new Uri("Resources/Styles/OceanMode.xaml", UriKind.Relative)
+            });
+        }
         else
         {
-            if (DeviceInfo.Current.Platform == DevicePlatform.Android)
+            Uri uri = new Uri("Resources/Styles/OceanMode.xaml", UriKind.Relative);
+#if ANDROID
+
+            uri = new Uri("Resources/Styles/AndroidMode.xaml", UriKind.Relative);
+#endif
+
+#if IOS
+            uri = new Uri("Resources/Styles/iOSMode.xaml", UriKind.Relative);          
+#endif
+
+#if WINDOWS
+            uri = new Uri("Resources/Styles/WinUIMode.xaml", UriKind.Relative);
+#endif
+
+            mergedDictionaries?.Add(new ResourceDictionary
             {
-                mergedDictionaries?.Add(new ResourceDictionary
-                {
-                    Source = new Uri("Resources/Styles/AndroidMode.xaml", UriKind.Relative)
-                });
-            }
-            else if (DeviceInfo.Current.Platform == DevicePlatform.iOS)
-            {
-                mergedDictionaries?.Add(new ResourceDictionary
-                {
-                    Source = new Uri("Resources/Styles/iOSMode.xaml", UriKind.Relative)
-                });
-            }
-            else if (DeviceInfo.Current.Platform == DevicePlatform.WinUI)
-            {
-                mergedDictionaries?.Add(new ResourceDictionary
-                {
-                    Source = new Uri("Resources/Styles/WinUIMode.xaml", UriKind.Relative)
-                });
-            }
+                Source = uri
+            });
         }
     }
 }

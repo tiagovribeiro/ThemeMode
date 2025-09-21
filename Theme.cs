@@ -1,4 +1,6 @@
-﻿namespace ThemeMode;
+﻿using ThemeMode.Services;
+
+namespace ThemeMode;
 
 public static class Theme
 {
