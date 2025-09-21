@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <!-- ANDROID MODE COLOR PALETTE (Material Design 3) -->
+
+    <!-- Background Colors -->
+    <Color x:Key="ThemePrimaryBackground">#FFFBFE</Color>
+    <Color x:Key="ThemeSecondaryBackground">#F7F2FA</Color>
+    <Color x:Key="ThemeTertiaryBackground">#FEF7FF</Color>
+    <Color x:Key="ThemeCardBackground">#FFFFFF</Color>
+    <Color x:Key="ThemeSurfaceBackground">#F7F2FA</Color>
+
+    <!-- Text Colors -->
+    <Color x:Key="ThemePrimaryText">#1C1B1F</Color>
+    <Color x:Key="ThemeSecondaryText">#49454F</Color>
+    <Color x:Key="ThemeDisabledText">#C4C7C5</Color>
+    <Color x:Key="ThemeHintText">#79747E</Color>
+
+    <!-- Accent Colors (Material You Purple) -->
+    <Color x:Key="ThemeAccentPrimary">#6750A4</Color>
+    <Color x:Key="ThemeAccentSecondary">#958DA5</Color>
+    <Color x:Key="ThemeAccentHover">#7F67BE</Color>
+    <Color x:Key="ThemeAccentPressed">#4F378B</Color>
+
+    <!-- Status Colors -->
+    <Color x:Key="ThemeSuccess">#1B5E20</Color>
+    <Color x:Key="ThemeWarning">#E65100</Color>
+    <Color x:Key="ThemeError">#BA1A1A</Color>
+    <Color x:Key="ThemeInfo">#0B57D0</Color>
+
+    <!-- Border Colors -->
+    <Color x:Key="ThemeBorderPrimary">#CAC4D0</Color>
+    <Color x:Key="ThemeBorderSecondary">#938F99</Color>
+    <Color x:Key="ThemeBorderFocus">#6750A4</Color>
+
+    <!-- Interactive Colors -->
+    <Color x:Key="ThemeHoverBackground">#F3F0F4</Color>
+    <Color x:Key="ThemePressedBackground">#E8E0E5</Color>
+    <Color x:Key="ThemeSelectedBackground">#E8DEF8</Color>
+
+    <!-- Shadow Colors -->
+    <Color x:Key="ThemeShadow">#00000040</Color>
+    <Color x:Key="ThemeShadowTheme">#00000020</Color>
+
+    <!-- ================================================ -->
+    <!-- PAGE STYLES -->
+    <!-- ================================================ -->
+
+    <Style TargetType="ContentPage" x:Key="ThemePageStyle">
+        <Setter Property="BackgroundColor" Value="{StaticResource ThemePrimaryBackground}" />
+        <Setter Property="Shell.BackgroundColor" Value="{StaticResource ThemeSecondaryBackground}" />
+        <Setter Property="Shell.ForegroundColor" Value="{StaticResource ThemePrimaryText}" />
+        <Setter Property="Shell.TitleColor" Value="{StaticResource ThemePrimaryText}" />
+    </Style>
+
+    <!-- ================================================ -->
+    <!-- TEXT CONTROLS -->
+    <!-- ================================================ -->
+
+    <Style TargetType="Label" x:Key="ThemeLabelStyle">
+        <Setter Property="TextColor" Value="{StaticResource ThemePrimaryText}" />
+        <Setter Property="BackgroundColor" Value="Transparent" />
+        <Setter Property="FontFamily" Value="Roboto" />
+        <Setter Property="FontSize" Value="14" />
+    </Style>
+
+    <Style TargetType="Label" x:Key="ThemeLabelSecondaryStyle" BasedOn="{StaticResource ThemeLabelStyle}">
+        <Setter Property="TextColor" Value="{StaticResource ThemeSecondaryText}" />
+        <Setter Property="FontSize" Value="14" />
+    </Style>
+
+    <Style TargetType="Label" x:Key="ThemeLabelHintStyle" BasedOn="{StaticResource ThemeLabelStyle}">
+        <Setter Property="TextColor" Value="{StaticResource ThemeHintText}" />
+        <Setter Property="FontSize" Value="12" />
+    </Style>
+
+    <Style TargetType="Label" x:Key="ThemeHeaderStyle" BasedOn="{StaticResource ThemeLabelStyle}">
+        <Setter Property="FontSize" Value="32" />
+        <Setter Property="FontAttributes" Value="None" />
+        <Setter Property="FontFamily" Value="Roboto" />
+    </Style>
+
+    <Style TargetType="Label" x:Key="ThemeSubHeaderStyle" BasedOn="{StaticResource ThemeLabelStyle}">
+        <Setter Property="FontSize" Value="22" />
+        <Setter Property="FontAttributes" Value="None" />
+        <Setter Property="FontFamily" Value="Roboto" />
+    </Style>
+
+    <!-- ================================================ -->
+    <!-- INPUT CONTROLS -->
+    <!-- ================================================ -->
+
+    <Style TargetType="Entry" x:Key="ThemeEntryStyle">
+        <Setter Property="TextColor" Value="{StaticResource ThemePrimaryText}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource ThemeCardBackground}" />
+        <Setter Property="PlaceholderColor" Value="{StaticResource ThemeHintText}" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="FontFamily" Value="Roboto" />
+        <Setter Property="HeightRequest" Value="56" />
+        <Setter Property="VisualStateManager.VisualStateGroups">
+            <VisualStateGroupList>
+                <VisualStateGroup Name="CommonStates">
+                    <VisualState Name="Normal">
+                        <VisualState.Setters>
+                            <Setter Property="BackgroundColor" Value="{StaticResource ThemeCardBackground}" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState Name="Focused">
+                        <VisualState.Setters>
+                            <Setter Property="BackgroundColor" Value="{StaticResource ThemeCardBackground}" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState Name="Disabled">
+                        <VisualState.Setters>
+                            <Setter Property="TextColor" Value="{StaticResource ThemeDisabledText}" />
+                            <Setter Property="BackgroundColor" Value="{StaticResource ThemeTertiaryBackground}" />
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateGroupList>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Editor" x:Key="ThemeEditorStyle">
+        <Setter Property="TextColor" Value="{StaticResource ThemePrimaryText}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource ThemeCardBackground}" />
+        <Setter Property="PlaceholderColor" Value="{StaticResource ThemeHintText}" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="FontFamily" Value="Roboto" />
+        <Setter Property="MinimumHeightRequest" Value="120" />
+    </Style>
+
+    <Style TargetType="SearchBar" x:Key="ThemeSearchBarStyle">
+        <Setter Property="TextColor" Value="{StaticResource ThemePrimaryText}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource ThemeCardBackground}" />
+        <Setter Property="PlaceholderColor" Value="{StaticResource ThemeHintText}" />
+        <Setter Property="CancelButtonColor" Value="{StaticResource ThemeSecondaryText}" />
+        <Setter Property="FontFamily" Value="Roboto" />
+        <Setter Property="FontSize" Value="16" />
+    </Style>
+
+    <!-- ================================================ -->
+    <!-- BUTTON STYLES -->
+    <!-- ================================================ -->
+
+    <Style TargetType="Button" x:Key="ThemeButtonPrimaryStyle">
+        <Setter Property="BackgroundColor" Value="{StaticResource ThemeAccentPrimary}" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontFamily" Value="Roboto" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="CornerRadius" Value="20" />
+        <Setter Property="HeightRequest" Value="40" />
+        <Setter Property="Padding" Value="24,10" />
+        <Setter Property="VisualStateManager.VisualStateGroups">
+            <VisualStateGroupList>
+                <VisualStateGroup Name="CommonStates">
+                    <VisualState Name="Normal">
+                        <VisualState.Setters>
+                            <Setter Property="BackgroundColor" Value="{StaticResource ThemeAccentPrimary}" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState Name="Pressed">
+                        <VisualState.Setters>
+                            <Setter Property="BackgroundColor" Value="{StaticResource ThemeAccentPressed}" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState Name="Disabled">
+                        <VisualState.Setters>
+                            <Setter Property="BackgroundColor" Value="{StaticResource ThemeTertiaryBackground}" />
+                            <Setter Property="TextColor" Value="{StaticResource ThemeDisabledText}" />
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateGroupList>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Button" x:Key="ThemeButtonSecondaryStyle" BasedOn="{StaticResource ThemeButtonPrimaryStyle}">
+        <Setter Property="BackgroundColor" Value="Transparent" />
+        <Setter Property="TextColor" Value="{StaticResource ThemeAccentPrimary}" />
+        <Setter Property="BorderColor" Value="{StaticResource ThemeAccentPrimary}" />
+        <Setter Property="BorderWidth" Value="1" />
+        <Setter Property="VisualStateManager.VisualStateGroups">
+            <VisualStateGroupList>
+                <VisualStateGroup Name="CommonStates">
+                    <VisualState Name="Normal">
+                        <VisualState.Setters>
+                            <Setter Property="BackgroundColor" Value="Transparent" />
+                            <Setter Property="TextColor" Value="{StaticResource ThemeAccentPrimary}" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState Name="Pressed">
+                        <VisualState.Setters>
+                            <Setter Property="BackgroundColor" Value="{StaticResource ThemeSelectedBackground}" />
+                            <Setter Property="TextColor" Value="{StaticResource ThemeAccentPrimary}" />
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateGroupList>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Button" x:Key="ThemeButtonDangerStyle" BasedOn="{StaticResource ThemeButtonPrimaryStyle}">
+        <Setter Property="BackgroundColor" Value="{StaticResource ThemeError}" />
+        <Setter Property="TextColor" Value="White" />
+    </Style>
+
+    <Style TargetType="Button" x:Key="ThemeButtonSuccessStyle" BasedOn="{StaticResource ThemeButtonPrimaryStyle}">
+        <Setter Property="BackgroundColor" Value="{StaticResource ThemeSuccess}" />
+        <Setter Property="TextColor" Value="White" />
+    </Style>
+
+    <!-- ================================================ -->
+    <!-- SELECTION CONTROLS -->
+    <!-- ================================================ -->
+
+    <Style TargetType="CheckBox" x:Key="ThemeCheckBoxStyle">
+        <Setter Property="Color" Value="{StaticResource ThemeAccentPrimary}" />
+    </Style>
+
+    <Style TargetType="Switch" x:Key="ThemeSwitchStyle">
+        <Setter Property="OnColor" Value="{StaticResource ThemeAccentPrimary}" />
+        <Setter Property="ThumbColor" Value="White" />
+    </Style>
+
+    <Style TargetType="RadioButton" x:Key="ThemeRadioButtonStyle">
+        <Setter Property="TextColor" Value="{StaticResource ThemePrimaryText}" />
+        <Setter Property="BackgroundColor" Value="Transparent" />
+        <Setter Property="FontFamily" Value="Roboto" />
+    </Style>
+
+    <Style TargetType="Picker" x:Key="ThemePickerStyle">
+        <Setter Property="TextColor" Value="{StaticResource ThemePrimaryText}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource ThemeCardBackground}" />
+        <Setter Property="TitleColor" Value="{StaticResource ThemeSecondaryText}" />
+        <Setter Property="FontFamily" Value="Roboto" />
+        <Setter Property="FontSize" Value="16" />
+    </Style>
+
+    <Style TargetType="DatePicker" x:Key="ThemeDatePickerStyle">
+        <Setter Property="TextColor" Value="{StaticResource ThemePrimaryText}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource ThemeCardBackground}" />
+        <Setter Property="FontFamily" Value="Roboto" />
+        <Setter Property="FontSize" Value="16" />
+    </Style>
+
+    <Style TargetType="TimePicker" x:Key="ThemeTimePickerStyle">
+        <Setter Property="TextColor" Value="{StaticResource ThemePrimaryText}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource ThemeCardBackground}" />
+        <Setter Property="FontFamily" Value="Roboto" />
+        <Setter Property="FontSize" Value="16" />
+    </Style>
+
+    <!-- ================================================ -->
+    <!-- RANGE CONTROLS -->
+    <!-- ================================================ -->
+
+    <Style TargetType="Slider" x:Key="ThemeSliderStyle">
+        <Setter Property="MinimumTrackColor" Value="{StaticResource ThemeAccentPrimary}" />
+        <Setter Property="MaximumTrackColor" Value="{StaticResource ThemeBorderPrimary}" />
+        <Setter Property="ThumbColor" Value="{StaticResource ThemeAccentPrimary}" />
+    </Style>
+
+    <Style TargetType="Stepper" x:Key="ThemeStepperStyle">
+        <Setter Property="BackgroundColor" Value="{StaticResource ThemeCardBackground}" />
+    </Style>
+
+    <Style TargetType="ProgressBar" x:Key="ThemeProgressBarStyle">
+        <Setter Property="ProgressColor" Value="{StaticResource ThemeAccentPrimary}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource ThemeBorderPrimary}" />
+    </Style>
+
+    <!-- ================================================ -->
+    <!-- CONTAINER CONTROLS -->
+    <!-- ================================================ -->
+
+    <Style TargetType="Frame" x:Key="ThemeFrameStyle">
+        <Setter Property="BackgroundColor" Value="{StaticResource ThemeCardBackground}" />
+        <Setter Property="BorderColor" Value="{StaticResource ThemeBorderPrimary}" />
+        <Setter Property="CornerRadius" Value="12" />
+        <Setter Property="Padding" Value="16" />
+        <Setter Property="HasShadow" Value="True" />
+    </Style>
+
+    <Style TargetType="Frame" x:Key="ThemeFrameElevatedStyle" BasedOn="{StaticResource ThemeFrameStyle}">
+        <Setter Property="BackgroundColor" Value="{StaticResource ThemeSurfaceBackground}" />
+        <Setter Property="HasShadow" Value="True" />
+        <Setter Property="CornerRadius" Value="16" />
+    </Style>
+
+    <Style TargetType="Border" x:Key="ThemeBorderStyle">
+        <Setter Property="Stroke" Value="{StaticResource ThemeBorderPrimary}" />
+        <Setter Property="StrokeThickness" Value="1" />
+        <Setter Property="BackgroundColor" Value="{StaticResource ThemeCardBackground}" />
+        <Setter Property="StrokeShape" Value="RoundRectangle 12" />
+    </Style>
+
+    <Style TargetType="ScrollView" x:Key="ThemeScrollViewStyle">
+        <Setter Property="BackgroundColor" Value="Transparent" />
+    </Style>
+
+    <!-- ================================================ -->
+    <!-- COLLECTION CONTROLS -->
+    <!-- ================================================ -->
+
+    <Style TargetType="CollectionView" x:Key="ThemeCollectionViewStyle">
+        <Setter Property="BackgroundColor" Value="Transparent" />
+    </Style>
+
+    <Style TargetType="CarouselView" x:Key="ThemeCarouselViewStyle">
+        <Setter Property="BackgroundColor" Value="Transparent" />
+        <Setter Property="IndicatorView.IndicatorColor" Value="{StaticResource ThemeBorderPrimary}" />
+        <Setter Property="IndicatorView.SelectedIndicatorColor" Value="{StaticResource ThemeAccentPrimary}" />
+    </Style>
+
+    <Style TargetType="RefreshView" x:Key="ThemeRefreshViewStyle">
+        <Setter Property="RefreshColor" Value="{StaticResource ThemeAccentPrimary}" />
+    </Style>
+
+    <!-- ================================================ -->
+    <!-- ACTIVITY INDICATORS -->
+    <!-- ================================================ -->
+
+    <Style TargetType="ActivityIndicator" x:Key="ThemeActivityIndicatorStyle">
+        <Setter Property="Color" Value="{StaticResource ThemeAccentPrimary}" />
+    </Style>
+
+    <!-- ================================================ -->
+    <!-- TABLE VIEW STYLES -->
+    <!-- ================================================ -->
+
+    <Style TargetType="TableView" x:Key="ThemeTableViewStyle">
+        <Setter Property="BackgroundColor" Value="{StaticResource ThemePrimaryBackground}" />
+    </Style>
+
+    <!-- ================================================ -->
+    <!-- NAVIGATION STYLES -->
+    <!-- ================================================ -->
+
+    <Style TargetType="NavigationPage" x:Key="ThemeNavigationPageStyle">
+        <Setter Property="BarBackgroundColor" Value="{StaticResource ThemeAccentPrimary}" />
+        <Setter Property="BarTextColor" Value="White" />
+    </Style>
+
+    <Style TargetType="TabbedPage" x:Key="ThemeTabbedPageStyle">
+        <Setter Property="BarBackgroundColor" Value="{StaticResource ThemeSecondaryBackground}" />
+        <Setter Property="BarTextColor" Value="{StaticResource ThemePrimaryText}" />
+        <Setter Property="SelectedTabColor" Value="{StaticResource ThemeAccentPrimary}" />
+        <Setter Property="UnselectedTabColor" Value="{StaticResource ThemeSecondaryText}" />
+    </Style>
+
+    <!-- ================================================ -->
+    <!-- SHELL STYLES -->
+    <!-- ================================================ -->
+
+    <Style TargetType="Shell" x:Key="ThemeShellStyle">
+        <Setter Property="Shell.BackgroundColor" Value="{StaticResource ThemeAccentPrimary}" />
+        <Setter Property="Shell.ForegroundColor" Value="White" />
+        <Setter Property="Shell.TitleColor" Value="White" />
+        <Setter Property="Shell.DisabledColor" Value="{StaticResource ThemeDisabledText}" />
+        <Setter Property="Shell.UnselectedColor" Value="#CCFFFFFF" />
+        <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource ThemeSecondaryBackground}" />
+        <Setter Property="Shell.TabBarForegroundColor" Value="{StaticResource ThemePrimaryText}" />
+        <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource ThemePrimaryText}" />
+        <Setter Property="Shell.TabBarUnselectedColor" Value="{StaticResource ThemeSecondaryText}" />
+    </Style>
+
+    <!-- ================================================ -->
+    <!-- UTILITY STYLES -->
+    <!-- ================================================ -->
+
+    <!-- Card Style for content grouping -->
+    <Style TargetType="Frame" x:Key="ThemeCardStyle" BasedOn="{StaticResource ThemeFrameStyle}">
+        <Setter Property="Margin" Value="16,8" />
+        <Setter Property="Padding" Value="20" />
+        <Setter Property="CornerRadius" Value="16" />
+        <Setter Property="HasShadow" Value="True" />
+    </Style>
+
+    <!-- List Item Style -->
+    <Style TargetType="Grid" x:Key="ThemeListItemStyle">
+        <Setter Property="BackgroundColor" Value="{StaticResource ThemeCardBackground}" />
+        <Setter Property="Padding" Value="16,12" />
+        <Setter Property="VisualStateManager.VisualStateGroups">
+            <VisualStateGroupList>
+                <VisualStateGroup Name="CommonStates">
+                    <VisualState Name="Normal">
+                        <VisualState.Setters>
+                            <Setter Property="BackgroundColor" Value="{StaticResource ThemeCardBackground}" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState Name="Selected">
+                        <VisualState.Setters>
+                            <Setter Property="BackgroundColor" Value="{StaticResource ThemeSelectedBackground}" />
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateGroupList>
+        </Setter>
+    </Style>
+
+    <!-- Icon Button Style -->
+    <Style TargetType="Button" x:Key="ThemeIconButtonStyle">
+        <Setter Property="BackgroundColor" Value="Transparent" />
+        <Setter Property="TextColor" Value="{StaticResource ThemeSecondaryText}" />
+        <Setter Property="BorderWidth" Value="0" />
+        <Setter Property="FontSize" Value="18" />
+        <Setter Property="FontFamily" Value="Roboto" />
+        <Setter Property="CornerRadius" Value="28" />
+        <Setter Property="HeightRequest" Value="56" />
+        <Setter Property="WidthRequest" Value="56" />
+        <Setter Property="VisualStateManager.VisualStateGroups">
+            <VisualStateGroupList>
+                <VisualStateGroup Name="CommonStates">
+                    <VisualState Name="Pressed">
+                        <VisualState.Setters>
+                            <Setter Property="BackgroundColor" Value="{StaticResource ThemeHoverBackground}" />
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateGroupList>
+        </Setter>
+    </Style>
+
+    <!-- Floating Action Button Style -->
+    <Style TargetType="Button" x:Key="ThemeFabStyle">
+        <Setter Property="BackgroundColor" Value="{StaticResource ThemeAccentPrimary}" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="FontSize" Value="24" />
+        <Setter Property="FontFamily" Value="Roboto" />
+        <Setter Property="CornerRadius" Value="28" />
+        <Setter Property="HeightRequest" Value="56" />
+        <Setter Property="WidthRequest" Value="56" />
+        <Setter Property="BorderWidth" Value="0" />
+        <Setter Property="Shadow" Value="True" />
+        <Setter Property="VisualStateManager.VisualStateGroups">
+            <VisualStateGroupList>
+                <VisualStateGroup Name="CommonStates">
+                    <VisualState Name="Pressed">
+                        <VisualState.Setters>
+                            <Setter Property="BackgroundColor" Value="{StaticResource ThemeAccentPressed}" />
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateGroupList>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>
