@@ -59,14 +59,40 @@ A refreshing, ocean-inspired theme for .NET MAUI applications featuring flowing 
 
 OceanMode brings the calming essence of ocean waters to your application with a carefully curated color scheme:
 
-Hex       | Usage              |
-----------|--------------------|
-`#F0FDFF` | Primary Background |
-`#FFFFFF` | Card Background    |
-`#0891B2` | Primary Accent     |
-`#06B6D4` | Secondary Accent   |
-`#134E4A` | Primary Text       |
-`#5F8A8B` | Secondary Text     |
+| Category        | Key                        | Hex Code    |
+|-----------------|----------------------------|-------------|
+| **Backgrounds** | ThemePrimaryBackground     | `#F0FDFF`   |
+|                 | ThemeSecondaryBackground   | `#FFFFFF`   |
+|                 | ThemeTertiaryBackground    | `#E6FFFA`   |
+|                 | ThemeCardBackground        | `#FFFFFF`   |
+|                 | ThemeSurfaceBackground     | `#F7FFFE`   |
+|-----------------|----------------------------|-------------|
+| **Text**        | ThemePrimaryText           | `#134E4A`   |
+|                 | ThemeSecondaryText         | `#5F8A8B`   |
+|                 | ThemeDisabledText          | `#A7C3C3`   |
+|                 | ThemeHintText              | `#7DD3FC`   |
+|-----------------|----------------------------|-------------|
+| **Accents**     | ThemeAccentPrimary         | `#0891B2`   |
+|                 | ThemeAccentSecondary       | `#06B6D4`   |
+|                 | ThemeAccentHover           | `#0E7490`   |
+|                 | ThemeAccentPressed         | `#164E63`   |
+|-----------------|----------------------------|-------------|
+| **Status**      | ThemeSuccess               | `#059669`   |
+|                 | ThemeWarning               | `#D97706`   |
+|                 | ThemeError                 | `#DC2626`   |
+|                 | ThemeInfo                  | `#0284C7`   |
+|-----------------|----------------------------|-------------|
+| **Borders**     | ThemeBorderPrimary         | `#A5F3FC`   |
+|                 | ThemeBorderSecondary       | `#67E8F9`   |
+|                 | ThemeBorderFocus           | `#0891B2`   |
+|-----------------|----------------------------|-------------|
+| **Interactive** | ThemeHoverBackground       | `#CFFAFE`   |
+|                 | ThemePressedBackground     | `#A5F3FC`   |
+|                 | ThemeSelectedBackground    | `#ECFEFF`   |
+|-----------------|----------------------------|-------------|
+| **Shadows**     | ThemeShadow                | `#0891B230` |
+|                 | ThemeShadowTheme           | `#0891B218` |
+|-----------------|----------------------------|-------------|
 
 ## ✨ Features
 
@@ -102,22 +128,40 @@ A clean, modern theme designed for **readability and clarity** in bright environ
 
 ## 🎨 Color Palette
 
-Hex       | Usage              
-----------|--------------------
-`#FFFFFF` | Primary Background 
-`#F8F9FA` | Secondary Background  
-`#F1F3F4` | Tertiary Background  
-`#FFFFFF` | Card Background  
-`#FAFBFC` | Surface Background  
-`#212529` | Primary Text  
-`#6C757D` | Secondary Text  
-`#ADB5BD` | Disabled Text  
-`#9CA3AF` | Hint Text  
-`#0066CC` | Primary Accent  
-`#004499` | Secondary Accent  
-`#3385D6` | Hover Accent  
-`#004080` | Pressed Accent  
-
+| Category        | Key                        | Hex Code    |
+|-----------------|----------------------------|-------------|
+| **Backgrounds** | ThemePrimaryBackground     | `#FFFFFF`   |
+|                 | ThemeSecondaryBackground   | `#F8F9FA`   |
+|                 | ThemeTertiaryBackground    | `#F1F3F4`   |
+|                 | ThemeCardBackground        | `#FFFFFF`   |
+|                 | ThemeSurfaceBackground     | `#FAFBFC`   |
+|-----------------|----------------------------|-------------|
+| **Text**        | ThemePrimaryText           | `#212529`   |
+|                 | ThemeSecondaryText         | `#6C757D`   |
+|                 | ThemeDisabledText          | `#ADB5BD`   |
+|                 | ThemeHintText              | `#9CA3AF`   |
+|-----------------|----------------------------|-------------|
+| **Accents**     | ThemeAccentPrimary         | `#0066CC`   |
+|                 | ThemeAccentSecondary       | `#004499`   |
+|                 | ThemeAccentHover           | `#3385D6`   |
+|                 | ThemeAccentPressed         | `#004080`   |
+|-----------------|----------------------------|-------------|
+| **Status**      | ThemeSuccess               | `#28A745`   |
+|                 | ThemeWarning               | `#FFC107`   |
+|                 | ThemeError                 | `#DC3545`   |
+|                 | ThemeInfo                  | `#17A2B8`   |
+|-----------------|----------------------------|-------------|
+| **Borders**     | ThemeBorderPrimary         | `#DEE2E6`   |
+|                 | ThemeBorderSecondary       | `#CED4DA`   |
+|                 | ThemeBorderFocus           | `#80BDFF`   |
+|-----------------|----------------------------|-------------|
+| **Interactive** | ThemeHoverBackground       | `#F8F9FA`   |
+|                 | ThemePressedBackground     | `#E9ECEF`   |
+|                 | ThemeSelectedBackground    | `#E3F2FD`   |
+|-----------------|----------------------------|-------------|
+| **Shadows**     | ThemeShadow                | `#00000020` |
+|                 | ThemeShadowTheme           | `#00000010` |
+|-----------------|----------------------------|-------------|
 
 # 🌑 DarkMode Theme
 
@@ -127,22 +171,40 @@ A sleek theme optimized for **low-light readability** and reduced eye strain.
 
 ## 🎨 Color Palette
 
-Hex       | Usage              
-----------|--------------------
-`#121212` | Primary Background  
-`#1E1E1E` | Secondary Background  
-`#2D2D30` | Tertiary Background  
-`#252526` | Card Background  
-`#3C3C3C` | Surface Background  
-`#FFFFFF` | Primary Text  
-`#B3B3B3` | Secondary Text  
-`#6D6D6D` | Disabled Text  
-`#808080` | Hint Text  
-`#0078D4` | Primary Accent  
-`#106EBE` | Secondary Accent  
-`#1F8AD6` | Hover Accent  
-`#0F5F9F` | Pressed Accent  
-
+| Category        | Key                        | Hex Code    |
+|-----------------|----------------------------|-------------|
+| **Backgrounds** | ThemePrimaryBackground     | `#121212`   |
+|                 | ThemeSecondaryBackground   | `#1E1E1E`   |
+|                 | ThemeTertiaryBackground    | `#2D2D30`   |
+|                 | ThemeCardBackground        | `#252526`   |
+|                 | ThemeSurfaceBackground     | `#3C3C3C`   |
+|-----------------|----------------------------|-------------|
+| **Text**        | ThemePrimaryText           | `#FFFFFF`   |
+|                 | ThemeSecondaryText         | `#B3B3B3`   |
+|                 | ThemeDisabledText          | `#6D6D6D`   |
+|                 | ThemeHintText              | `#808080`   |
+|-----------------|----------------------------|-------------|
+| **Accents**     | ThemeAccentPrimary         | `#0078D4`   |
+|                 | ThemeAccentSecondary       | `#106EBE`   |
+|                 | ThemeAccentHover           | `#1F8AD6`   |
+|                 | ThemeAccentPressed         | `#0F5F9F`   |
+|-----------------|----------------------------|-------------|
+| **Status**      | ThemeSuccess               | `#4CAF50`   |
+|                 | ThemeWarning               | `#FF9800`   |
+|                 | ThemeError                 | `#F44336`   |
+|                 | ThemeInfo                  | `#2196F3`   |
+|-----------------|----------------------------|-------------|
+| **Borders**     | ThemeBorderPrimary         | `#464647`   |
+|                 | ThemeBorderSecondary       | `#5A5A5C`   |
+|                 | ThemeBorderFocus           | `#007ACC`   |
+|-----------------|----------------------------|-------------|
+| **Interactive** | ThemeHoverBackground       | `#383838`   |
+|                 | ThemePressedBackground     | `#2A2A2A`   |
+|                 | ThemeSelectedBackground    | `#094771`   |
+|-----------------|----------------------------|-------------|
+| **Shadows**     | ThemeShadow                | `#000000`   |
+|                 | ThemeShadowLight           | `#1A1A1A`   |
+|-----------------|----------------------------|-------------|
 
 # 🤖 AndroidMode Theme
 
@@ -152,21 +214,40 @@ A Material Design 3 inspired palette with **dynamic accents and familiar Android
 
 ## 🎨 Color Palette
 
-Hex       | Usage              
-----------|--------------------
-`#FFFBFE` | Primary Background  
-`#F7F2FA` | Secondary Background  
-`#FEF7FF` | Tertiary Background  
-`#FFFFFF` | Card Background  
-`#F7F2FA` | Surface Background  
-`#1C1B1F` | Primary Text  
-`#49454F` | Secondary Text  
-`#C4C7C5` | Disabled Text  
-`#79747E` | Hint Text  
-`#6750A4` | Primary Accent  
-`#958DA5` | Secondary Accent  
-`#7F67BE` | Hover Accent  
-`#4F378B` | Pressed Accent  
+| Category        | Key                        | Hex Code	 |
+|-----------------|----------------------------|-------------|
+| **Backgrounds** | ThemePrimaryBackground     | `#FFFBFE`	 |
+|                 | ThemeSecondaryBackground   | `#F7F2FA`	 |
+|                 | ThemeTertiaryBackground    | `#FEF7FF`	 |
+|                 | ThemeCardBackground        | `#FFFFFF`	 |
+|                 | ThemeSurfaceBackground     | `#F7F2FA`	 |
+|-----------------|----------------------------|-------------|
+| **Text**        | ThemePrimaryText           | `#1C1B1F`	 |
+|                 | ThemeSecondaryText         | `#49454F`	 |
+|                 | ThemeDisabledText          | `#C4C7C5`	 |
+|                 | ThemeHintText              | `#79747E`	 |
+|-----------------|----------------------------|-------------|
+| **Accents**     | ThemeAccentPrimary         | `#6750A4`	 |
+|                 | ThemeAccentSecondary       | `#958DA5`	 |
+|                 | ThemeAccentHover           | `#7F67BE`	 |
+|                 | ThemeAccentPressed         | `#4F378B`	 |
+|-----------------|----------------------------|-------------|
+| **Status**      | ThemeSuccess               | `#1B5E20`	 |
+|                 | ThemeWarning               | `#E65100`	 |
+|                 | ThemeError                 | `#BA1A1A`	 |
+|                 | ThemeInfo                  | `#0B57D0`	 |
+|-----------------|----------------------------|-------------|
+| **Borders**     | ThemeBorderPrimary         | `#CAC4D0`	 |
+|                 | ThemeBorderSecondary       | `#938F99`	 |
+|                 | ThemeBorderFocus           | `#6750A4`	 |
+|-----------------|----------------------------|-------------|
+| **Interactive** | ThemeHoverBackground       | `#F3F0F4`	 |
+|                 | ThemePressedBackground     | `#E8E0E5`	 |
+|                 | ThemeSelectedBackground    | `#E8DEF8`	 |
+|-----------------|----------------------------|-------------|
+| **Shadows**     | ThemeShadow                | `#00000040` |
+|                 | ThemeShadowTheme           | `#00000020` |
+|-----------------|----------------------------|-------------|
 
 
 # 🍏 iOSMode Theme
@@ -177,22 +258,40 @@ Designed with **iOS system colors** for a **native Cupertino feel**.
 
 ## 🎨 Color Palette
 
-Hex       | Usage              
-----------|--------------------
-`#F2F2F7` | Primary Background  
-`#FFFFFF` | Secondary Background  
-`#FFFFFF` | Tertiary Background  
-`#FFFFFF` | Card Background  
-`#F9F9F9` | Surface Background  
-`#000000` | Primary Text  
-`#8E8E93` | Secondary Text  
-`#C7C7CC` | Disabled Text  
-`#8E8E93` | Hint Text  
-`#007AFF` | Primary Accent  
-`#5856D6` | Secondary Accent  
-`#0051D5` | Hover Accent  
-`#004CCC` | Pressed Accent  
-
+| Category        | Key                        | Hex Code    |
+|-----------------|----------------------------|-------------|
+| **Backgrounds** | ThemePrimaryBackground     | `#F2F2F7`   |
+|                 | ThemeSecondaryBackground   | `#FFFFFF`   |
+|                 | ThemeTertiaryBackground    | `#FFFFFF`   |
+|                 | ThemeCardBackground        | `#FFFFFF`   |
+|                 | ThemeSurfaceBackground     | `#F9F9F9`   |
+|-----------------|----------------------------|-------------|
+| **Text**        | ThemePrimaryText           | `#000000`   |
+|                 | ThemeSecondaryText         | `#8E8E93`   |
+|                 | ThemeDisabledText          | `#C7C7CC`   |
+|                 | ThemeHintText              | `#8E8E93`   |
+|-----------------|----------------------------|-------------|
+| **Accents**     | ThemeAccentPrimary         | `#007AFF`   |
+|                 | ThemeAccentSecondary       | `#5856D6`   |
+|                 | ThemeAccentHover           | `#0051D5`   |
+|                 | ThemeAccentPressed         | `#004CCC`   |
+|-----------------|----------------------------|-------------|
+| **Status**      | ThemeSuccess               | `#34C759`   |
+|                 | ThemeWarning               | `#FF9500`   |
+|                 | ThemeError                 | `#FF3B30`   |
+|                 | ThemeInfo                  | `#5AC8FA`   |
+|-----------------|----------------------------|-------------|
+| **Borders**     | ThemeBorderPrimary         | `#C6C6C8`   |
+|                 | ThemeBorderSecondary       | `#D1D1D6`   |
+|                 | ThemeBorderFocus           | `#007AFF`   |
+|-----------------|----------------------------|-------------|
+| **Interactive** | ThemeHoverBackground       | `#F2F2F7`   |
+|                 | ThemePressedBackground     | `#E5E5EA`   |
+|                 | ThemeSelectedBackground    | `#E3F2FD`   |
+|-----------------|----------------------------|-------------|
+| **Shadows**     | ThemeShadow                | `#00000010` |
+|                 | ThemeShadowTheme           | `#00000008` |
+|-----------------|----------------------------|-------------|
 
 # 🪟 WinUIMode Theme
 
@@ -202,18 +301,37 @@ Inspired by **Windows Fluent Design**, providing crisp, accessible contrast and 
 
 ## 🎨 Color Palette
 
-Hex       | Usage              
-----------|--------------------
-`#F3F3F3` | Primary Background  
-`#FFFFFF` | Secondary Background  
-`#F9F9F9` | Tertiary Background  
-`#FFFFFF` | Card Background  
-`#F5F5F5` | Surface Background  
-`#000000` | Primary Text  
-`#666666` | Secondary Text  
-`#CCCCCC` | Disabled Text  
-`#999999` | Hint Text  
-`#0078D4` | Primary Accent  
-`#005A9E` | Secondary Accent  
-`#106EBE` | Hover Accent  
-`#004578` | Pressed Accent  
+| Category        | Key                        | Hex Code    |
+|-----------------|----------------------------|-------------|
+| **Backgrounds** | ThemePrimaryBackground     | `#F3F3F3`   |
+|                 | ThemeSecondaryBackground   | `#FFFFFF`   |
+|                 | ThemeTertiaryBackground    | `#F9F9F9`   |
+|                 | ThemeCardBackground        | `#FFFFFF`   |
+|                 | ThemeSurfaceBackground     | `#F5F5F5`   |
+|-----------------|----------------------------|-------------|
+| **Text**        | ThemePrimaryText           | `#000000`   |
+|                 | ThemeSecondaryText         | `#666666`   |
+|                 | ThemeDisabledText          | `#CCCCCC`   |
+|                 | ThemeHintText              | `#999999`   |
+|-----------------|----------------------------|-------------|
+| **Accents**     | ThemeAccentPrimary         | `#0078D4`   |
+|                 | ThemeAccentSecondary       | `#005A9E`   |
+|                 | ThemeAccentHover           | `#106EBE`   |
+|                 | ThemeAccentPressed         | `#004578`   |
+|-----------------|----------------------------|-------------|
+| **Status**      | ThemeSuccess               | `#107C10`   |
+|                 | ThemeWarning               | `#FF8C00`   |
+|                 | ThemeError                 | `#D13438`   |
+|                 | ThemeInfo                  | `#0078D4`   |
+|-----------------|----------------------------|-------------|
+| **Borders**     | ThemeBorderPrimary         | `#E1E1E1`   |
+|                 | ThemeBorderSecondary       | `#CCCCCC`   |
+|                 | ThemeBorderFocus           | `#0078D4`   |
+|-----------------|----------------------------|-------------|
+| **Interactive** | ThemeHoverBackground       | `#F2F2F2`   |
+|                 | ThemePressedBackground     | `#E6E6E6`   |
+|                 | ThemeSelectedBackground    | `#E3F2FD`   |
+|-----------------|----------------------------|-------------|
+| **Shadows**     | ThemeShadow                | `#00000020` |
+|                 | ThemeShadowTheme           | `#00000010` |
+|-----------------|----------------------------|-------------|
