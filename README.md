@@ -49,7 +49,7 @@ designed for .NET MAUI and supports:
 
 # 🌊 OceanMode Theme
 
-![Ocean Mode Preview](docs/darkmode.png)
+![Ocean Mode Preview](Images/oceanmode.png)
 
 *"Like water, be fluid. Like the ocean, be deep. Like waves, keep moving forward."* 🌊
 
@@ -96,7 +96,7 @@ The ocean theme promotes:
 
 # ☀️ LightMode Theme
 
-![Light Mode Preview](docs/lightmode.png)
+![Light Mode Preview](Images/lightmode.png)
 
 A clean, modern theme designed for **readability and clarity** in bright environments.  
 
@@ -121,7 +121,7 @@ Hex       | Usage
 
 # 🌑 DarkMode Theme
 
-![Dark Mode Preview](docs/darkmode.png)
+![Dark Mode Preview](Images/darkmode.png)
 
 A sleek theme optimized for **low-light readability** and reduced eye strain.  
 
@@ -146,7 +146,7 @@ Hex       | Usage
 
 # 🤖 AndroidMode Theme
 
-![Android Mode Preview](docs/androidmode.png)
+![Android Mode Preview](Images/androidmode.png)
 
 A Material Design 3 inspired palette with **dynamic accents and familiar Android feel**.  
 
@@ -171,7 +171,7 @@ Hex       | Usage
 
 # 🍏 iOSMode Theme
 
-![iOS Mode Preview](docs/iosmode.png)
+![iOS Mode Preview](Images/iosmode.png)
 
 Designed with **iOS system colors** for a **native Cupertino feel**.  
 
@@ -196,7 +196,7 @@ Hex       | Usage
 
 # 🪟 WinUIMode Theme
 
-![WinUI Mode Preview](docs/winuimode.png)
+![WinUI Mode Preview](Images/winuimode.png)
 
 Inspired by **Windows Fluent Design**, providing crisp, accessible contrast and familiar UI cues.  
 
