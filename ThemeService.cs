@@ -1,7 +1,6 @@
-﻿
-namespace ThemeMode;
+﻿namespace ThemeMode;
 
-public class ThemeService : IThemeService
+internal sealed class ThemeService : IThemeService
 {
     private static List<ThemeMode> ThemeOptionsList => new()
     {
@@ -13,7 +12,6 @@ public class ThemeService : IThemeService
     private const string ThemeOptionPreference = "ThemeOptionPreferences";
 
     private ThemeOption _themeOption;
-
     public ThemeOption ThemeOption
     {
         get => _themeOption;
@@ -80,21 +78,21 @@ public class ThemeService : IThemeService
         }
         else
         {
-            if(DeviceInfo.Current.Platform == DevicePlatform.Android)
+            if (DeviceInfo.Current.Platform == DevicePlatform.Android)
             {
                 mergedDictionaries?.Add(new ResourceDictionary
                 {
                     Source = new Uri("Resources/Styles/AndroidMode.xaml", UriKind.Relative)
                 });
             }
-            else if(DeviceInfo.Current.Platform == DevicePlatform.iOS)
+            else if (DeviceInfo.Current.Platform == DevicePlatform.iOS)
             {
                 mergedDictionaries?.Add(new ResourceDictionary
                 {
                     Source = new Uri("Resources/Styles/iOSMode.xaml", UriKind.Relative)
                 });
             }
-            else if(DeviceInfo.Current.Platform == DevicePlatform.WinUI)
+            else if (DeviceInfo.Current.Platform == DevicePlatform.WinUI)
             {
                 mergedDictionaries?.Add(new ResourceDictionary
                 {
