@@ -26,16 +26,28 @@
 	  <MauiXaml Update="Controls\ThemeButton.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Resources\Styles\AndroidMode.xaml">
+	  <MauiXaml Update="Resources\Colors\AndroidMode.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Resources\Styles\OceanMode.xaml">
+	  <MauiXaml Update="Resources\Colors\DarkMode.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Resources\Styles\iOSMode.xaml">
+	  <MauiXaml Update="Resources\Colors\iOSMode.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Resources\Styles\WinUIMode.xaml">
+	  <MauiXaml Update="Resources\Colors\LightMode.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Colors\OceanMode.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Colors\WinUiMode.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Colors\WinUI95Mode.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Styles\Styles.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
@@ -45,8 +57,17 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Resources\Styles\OceanMode.xaml.cs">
+	  <Compile Update="Resources\Colors\LightMode.xaml.cs">
+	    <DependentUpon>LightMode.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Resources\Colors\OceanMode.xaml.cs">
 	    <DependentUpon>OceanMode.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Resources\Colors\WinUI95Mode.xaml.cs">
+	    <DependentUpon>WinUI95Mode.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Resources\Colors\WinUiMode.xaml.cs">
+	    <DependentUpon>WinUiMode.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 

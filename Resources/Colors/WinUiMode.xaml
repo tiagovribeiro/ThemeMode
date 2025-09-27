@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ThemeMode.Resources.Colors.WinUiMode">
+
+    <!-- ========================
+   Windows Legacy Theme Palette
+   ======================== -->
+
+    <!-- Core Brand / Accent Colors -->
+    <Color x:Key="Primary">#0078D7</Color>
+    <!-- Modern Windows Blue -->
+    <Color x:Key="PrimaryDark">#005A9E</Color>
+    <!-- Darker Windows Blue -->
+    <Color x:Key="PrimaryLight">#5EB4FF</Color>
+    <!-- Light Windows Blue -->
+    <Color x:Key="Secondary">#00B7C3</Color>
+    <!-- Accent Cyan (modern accent) -->
+
+    <!-- Text Colors -->
+    <Color x:Key="TextPrimary">#000000</Color>
+    <!-- Classic black text -->
+    <Color x:Key="TextSecondary">#5F6368</Color>
+    <!-- Medium grey for secondary text -->
+    <Color x:Key="TextTertiary">#7A7A7A</Color>
+    <!-- Softer grey for tertiary text -->
+    <Color x:Key="TextDisabled">#A6A6A6</Color>
+    <!-- Disabled/placeholder -->
+
+    <!-- Background Colors -->
+    <Color x:Key="BackgroundPrimary">#FFFFFF</Color>
+    <!-- Window background (cream historically #F0F0F0) -->
+    <Color x:Key="BackgroundSecondary">#E6E6E6</Color>
+    <!-- Light grey panels -->
+    <Color x:Key="BackgroundTertiary">#C8C8C8</Color>
+    <!-- Medium grey surfaces -->
+    <Color x:Key="BackgroundSurface">#F0F0F0</Color>
+    <!-- Legacy “3D Face”/cream tone -->
+
+    <!-- Interactive States -->
+    <Color x:Key="Hover">#D6EBFF</Color>
+    <!-- Soft blue hover highlight -->
+    <Color x:Key="Pressed">#99CCFF</Color>
+    <!-- Pressed/active blue -->
+    <Color x:Key="Selected">#3399FF</Color>
+    <!-- Selected item highlight -->
+
+    <!-- Basic Colors -->
+    <Color x:Key="White">#FFFFFF</Color>
+    <Color x:Key="Black">#000000</Color>
+    <Color x:Key="OffBlack">#1F1F1F</Color>
+
+    <!-- Status Colors (from the classic 20-color set) -->
+    <Color x:Key="Success">#00A300</Color>
+    <!-- Windows Green -->
+    <Color x:Key="Warning">#FFC40D</Color>
+    <!-- Windows Yellow -->
+    <Color x:Key="Error">#E81123</Color>
+    <!-- Windows Red -->
+    <Color x:Key="Info">#0078D7</Color>
+    <!-- Windows Blue -->
+
+    <!-- Borders & Separators -->
+    <Color x:Key="BorderPrimary">#C0C0C0</Color>
+    <!-- Standard border grey -->
+    <Color x:Key="BorderSecondary">#D9D9D9</Color>
+    <!-- Light separator grey -->
+    <Color x:Key="BorderFocus">#0078D7</Color>
+    <!-- Accent blue focus ring -->
+    <Color x:Key="Separator">#C0C0C0</Color>
+    <!-- Divider line -->
+
+    <!-- Shadows -->
+    <Color x:Key="Shadow">#00000040</Color>
+    <!-- 25% opacity black shadow -->
+    <Color x:Key="ShadowLight">#00000020</Color>
+    
+</ResourceDictionary>

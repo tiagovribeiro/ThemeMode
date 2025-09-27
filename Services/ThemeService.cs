@@ -1,4 +1,5 @@
-﻿using ThemeMode.Resources.Styles;
+﻿using ThemeMode.Resources.Colors;
+using ThemeMode.Resources.Styles;
 
 namespace ThemeMode.Services;
 
@@ -6,10 +7,13 @@ internal sealed class ThemeService : IThemeService
 {
     private static List<ThemeMode> ThemeOptionsList => new()
     {
-        new ThemeMode("System", "📱", ThemeOption.System),
+        new ThemeMode("Ocean", "🌊", ThemeOption.Ocean),
         new ThemeMode("Light", "☀️", ThemeOption.Light),
         new ThemeMode("Dark", "🌙", ThemeOption.Dark),
-        new ThemeMode("Dark", "🌊", ThemeOption.Ocean)
+        new ThemeMode("WinUi", "🪟", ThemeOption.WinUi),
+        new ThemeMode("WinUi95", "🖥️", ThemeOption.WinUi95),
+        new ThemeMode("iOS", "🍏", ThemeOption.iOS),
+        new ThemeMode("Android", "🤖", ThemeOption.Android),
     };
 
     private const string ThemeOptionPreference = "ThemeOptionPreferences";
@@ -37,7 +41,7 @@ internal sealed class ThemeService : IThemeService
             return;
         }
 
-        _themeOption = ThemeOption.System;
+        _themeOption = ThemeOption.Ocean;
     }
 
     public IEnumerable<ThemeMode> GetThemes()
@@ -62,45 +66,32 @@ internal sealed class ThemeService : IThemeService
         // Clear existing theme
         Application.Current.Resources.MergedDictionaries?.Clear();
 
+        Application.Current.Resources.MergedDictionaries?.Add(new Styles());
+
         // Add appropriate theme
-        if (ThemeOption == ThemeOption.Dark)
+        switch (ThemeOption)
         {
-            Application.Current.Resources.MergedDictionaries?.Add(new ResourceDictionary
-            {
-                Source = new Uri("Resources/Styles/DarkMode.xaml", UriKind.Relative)
-            });
-        }
-        else if (ThemeOption == ThemeOption.Light)
-        {
-            Application.Current.Resources.MergedDictionaries?.Add(new ResourceDictionary
-            {
-                Source = new Uri("Resources/Styles/LightMode.xaml", UriKind.Relative)
-            });
-        }
-        else if (ThemeOption == ThemeOption.Ocean)
-        {
-            Application.Current.Resources.MergedDictionaries?.Add(new OceanMode());
-        }
-        else
-        {
-            Uri uri = new Uri("Resources/Styles/OceanMode.xaml", UriKind.Relative);
-#if ANDROID
-
-            uri = new Uri("Resources/Styles/AndroidMode.xaml", UriKind.Relative);
-#endif
-
-#if IOS
-            uri = new Uri("Resources/Styles/iOSMode.xaml", UriKind.Relative);          
-#endif
-
-#if WINDOWS
-            uri = new Uri("Resources/Styles/WinUIMode.xaml", UriKind.Relative);
-#endif
-
-            Application.Current.Resources.MergedDictionaries?.Add(new ResourceDictionary
-            {
-                Source = uri
-            });
+            case ThemeOption.Ocean:
+                Application.Current.Resources.MergedDictionaries?.Add(new OceanMode());
+                break;
+            case ThemeOption.Dark:
+                Application.Current.Resources.MergedDictionaries?.Add(new DarkMode());
+                break;
+            case ThemeOption.Light:
+                Application.Current.Resources.MergedDictionaries?.Add(new LightMode());
+                break;
+            case ThemeOption.WinUi:
+                Application.Current.Resources.MergedDictionaries?.Add(new WinUiMode());
+                break;
+            case ThemeOption.WinUi95:
+                Application.Current.Resources.MergedDictionaries?.Add(new WinUI95Mode());
+                break;
+            case ThemeOption.iOS:
+                Application.Current.Resources.MergedDictionaries?.Add(new iOSMode());
+                break;
+            case ThemeOption.Android:
+                Application.Current.Resources.MergedDictionaries?.Add(new AndroidMode());
+                break;
         }
     }
 }

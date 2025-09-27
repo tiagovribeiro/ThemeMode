@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ThemeMode.Resources.Colors.DarkMode">
+
+    <!-- ========================
+   Dark Mode Theme Palette
+   ======================== -->
+    
+    <!-- Core Brand / Accent Colors -->
+    <Color x:Key="Primary">#5144e3</Color>
+    <Color x:Key="PrimaryLight">#8378f5</Color>
+    <Color x:Key="AccentWarm">#e6b565</Color>
+    <Color x:Key="AccentWarmDark">#e6a747</Color>
+    <Color x:Key="PureWhite">#ffffff</Color>
+
+    <!-- Text Colors -->
+    <Color x:Key="TextPrimary">#ffffff</Color>
+    <Color x:Key="TextSecondary">#e6b565</Color>
+    <Color x:Key="TextTertiary">#8378f5</Color>
+    <Color x:Key="TextDisabled">#5144e3</Color>
+
+    <!-- Background Colors -->
+    <Color x:Key="BackgroundPrimary">#0b0b0f</Color>
+    <Color x:Key="BackgroundSecondary">#16161a</Color>
+    <Color x:Key="BackgroundTertiary">#1f1f23</Color>
+    <Color x:Key="BackgroundSurface">#26262b</Color>
+
+    <!-- Interactive States -->
+    <Color x:Key="Hover">#5144e3</Color>
+    <Color x:Key="Pressed">#8378f5</Color>
+    <Color x:Key="Selected">#e6a747</Color>
+
+    <!-- Status Colors -->
+    <Color x:Key="Success">#e6b565</Color>
+    <Color x:Key="Warning">#e6a747</Color>
+    <Color x:Key="Error">#5144e3</Color>
+    <Color x:Key="Info">#8378f5</Color>
+
+    <!-- Borders & Separators -->
+    <Color x:Key="BorderPrimary">#5144e3</Color>
+    <Color x:Key="BorderSecondary">#8378f5</Color>
+    <Color x:Key="BorderFocus">#e6a747</Color>
+    <Color x:Key="Separator">#2a2a2f</Color>
+
+    <!-- Shadows -->
+    <Color x:Key="Shadow">#000000A0</Color>
+    <Color x:Key="ShadowLight">#00000060</Color>
+
+</ResourceDictionary>

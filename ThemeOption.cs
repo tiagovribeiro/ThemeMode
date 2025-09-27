@@ -2,8 +2,11 @@
 
 public enum ThemeOption
 {
-    System = 'S',
+    Ocean = 'O',
     Dark = 'D',
     Light = 'L',
-    Ocean = 'O',
+    WinUi = 'W',
+    WinUi95 = 'w',
+    iOS = 'I',
+    Android = 'A'
 }

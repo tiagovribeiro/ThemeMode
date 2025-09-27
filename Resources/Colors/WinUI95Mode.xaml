@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ThemeMode.Resources.Colors.WinUI95Mode">
+
+    <!-- ========================
+   Classic Windows 95 Palette
+   ======================== -->
+
+    <!-- Core Brand / Accent Colors -->
+    <Color x:Key="Primary">#000080</Color>
+    <!-- Active title bar (dark blue) -->
+    <Color x:Key="PrimaryDark">#000000</Color>
+    <!-- Black (used in borders/text) -->
+    <Color x:Key="PrimaryLight">#808080</Color>
+    <!-- Light grey highlight -->
+    <Color x:Key="Secondary">#008080</Color>
+    <!-- Teal accent (Win95 brand color) -->
+
+    <!-- Text Colors -->
+    <Color x:Key="TextPrimary">#000000</Color>
+    <!-- Standard text -->
+    <Color x:Key="TextSecondary">#333333</Color>
+    <!-- Slightly softer black -->
+    <Color x:Key="TextTertiary">#808080</Color>
+    <!-- Inactive/disabled text grey -->
+    <Color x:Key="TextDisabled">#A0A0A0</Color>
+    <!-- Disabled/3D shadow text -->
+
+    <!-- Background Colors -->
+    <Color x:Key="BackgroundPrimary">#C0C0C0</Color>
+    <!-- 3D Face (classic grey) -->
+    <Color x:Key="BackgroundSecondary">#FFFFFF</Color>
+    <!-- Window background -->
+    <Color x:Key="BackgroundTertiary">#808080</Color>
+    <!-- Darker 3D shadow grey -->
+    <Color x:Key="BackgroundSurface">#F0F0F0</Color>
+    <!-- Dialog background (light creamish grey) -->
+
+    <!-- Interactive States -->
+    <Color x:Key="Hover">#000080</Color>
+    <!-- Same as title bar blue -->
+    <Color x:Key="Pressed">#808080</Color>
+    <!-- Pressed buttons (shadow grey) -->
+    <Color x:Key="Selected">#000080</Color>
+    <!-- Selection highlight (dark blue) -->
+
+    <!-- Basic Colors -->
+    <Color x:Key="White">#FFFFFF</Color>
+    <Color x:Key="Black">#000000</Color>
+    <Color x:Key="OffBlack">#202020</Color>
+
+    <!-- Status Colors -->
+    <Color x:Key="Success">#008000</Color>
+    <!-- Classic green -->
+    <Color x:Key="Warning">#808000</Color>
+    <!-- Olive yellowish warning -->
+    <Color x:Key="Error">#800000</Color>
+    <!-- Dark red error -->
+    <Color x:Key="Info">#000080</Color>
+    <!-- Blue used for info/selection -->
+
+    <!-- Borders & Separators -->
+    <Color x:Key="BorderPrimary">#808080</Color>
+    <!-- 3D shadow grey -->
+    <Color x:Key="BorderSecondary">#C0C0C0</Color>
+    <!-- 3D highlight grey -->
+    <Color x:Key="BorderFocus">#000080</Color>
+    <!-- Focus outline = blue -->
+    <Color x:Key="Separator">#A0A0A0</Color>
+    <!-- Divider line grey -->
+
+    <!-- Shadows -->
+    <Color x:Key="Shadow">#00000040</Color>
+    <!-- Soft black shadow -->
+    <Color x:Key="ShadowLight">#80808040</Color>
+    <!-- Greyish light shadow -->
+    
+</ResourceDictionary>

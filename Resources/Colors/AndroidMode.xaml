@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ThemeMode.Resources.Colors.AndroidMode">
+    
+    <!-- ========================
+   Android Brand Theme Palette
+   ======================== -->
+
+    <!-- Core Brand / Accent Colors -->
+    <Color x:Key="Primary">#34A853</Color>
+    <Color x:Key="PrimaryDark">#202124</Color>
+    <Color x:Key="PrimaryLight">#C6FF00</Color>
+    <Color x:Key="Secondary">#4285F4</Color>
+
+
+    <!-- Text Colors -->
+    <Color x:Key="TextPrimary">#202124</Color>
+    <Color x:Key="TextSecondary">#5F6368</Color>
+    <Color x:Key="TextTertiary">#9AA0A6</Color>
+    <Color x:Key="TextDisabled">#BDC1C6</Color>
+
+
+    <!-- Background Colors -->
+    <Color x:Key="BackgroundPrimary">#FFFFFF</Color>
+    <Color x:Key="BackgroundSecondary">#F1F3F4</Color>
+    <Color x:Key="BackgroundTertiary">#E8F5E9</Color>
+    <Color x:Key="BackgroundSurface">#FFFFFF</Color>
+
+    <!-- Interactive States -->
+    <Color x:Key="Hover">#E8F5E9</Color>
+    <Color x:Key="Pressed">#C8E6C9</Color>
+    <Color x:Key="Selected">#BBDEFB</Color>
+
+
+    <!-- Basic Colors -->
+    <Color x:Key="White">#FFFFFF</Color>
+    <Color x:Key="Black">#000000</Color>
+    <Color x:Key="OffBlack">#202124</Color>
+
+    <!-- Status Colors -->
+    <Color x:Key="Success">#34A853</Color>
+    <Color x:Key="Warning">#FBBC05</Color>
+    <Color x:Key="Error">#EA4335</Color>
+    <Color x:Key="Info">#4285F4</Color>
+
+    <!-- Borders & Separators -->
+    <Color x:Key="BorderPrimary">#DADCE0</Color>
+    <Color x:Key="BorderSecondary">#E0E0E0</Color>
+    <Color x:Key="BorderFocus">#34A853</Color>
+    <Color x:Key="Separator">#E8EAED</Color>
+
+
+    <!-- Shadows -->
+    <Color x:Key="Shadow">#00000026</Color>
+    <Color x:Key="ShadowLight">#00000012</Color>
+
+</ResourceDictionary>
