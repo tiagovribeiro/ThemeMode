@@ -29,10 +29,10 @@
 	  <MauiXaml Update="Resources\Styles\AndroidMode.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Resources\Styles\iOSMode.xaml">
+	  <MauiXaml Update="Resources\Styles\OceanMode.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Resources\Styles\OceanMode.xaml">
+	  <MauiXaml Update="Resources\Styles\iOSMode.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Resources\Styles\WinUIMode.xaml">
@@ -42,6 +42,12 @@
 
 	<ItemGroup>
 	  <Folder Include="Images\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Resources\Styles\OceanMode.xaml.cs">
+	    <DependentUpon>OceanMode.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 </Project>

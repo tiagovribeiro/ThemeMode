@@ -1,4 +1,6 @@
-﻿namespace ThemeMode.Services;
+﻿using ThemeMode.Resources.Styles;
+
+namespace ThemeMode.Services;
 
 internal sealed class ThemeService : IThemeService
 {
@@ -52,37 +54,32 @@ internal sealed class ThemeService : IThemeService
 
     private void ApplyTheme()
     {
-        var mergedDictionaries = Application.Current?.Resources.MergedDictionaries;
-
-        if (mergedDictionaries == null)
+        if (Application.Current?.Resources?.MergedDictionaries == null)
         {
             return;
         }
 
         // Clear existing theme
-        mergedDictionaries?.Clear();
+        Application.Current.Resources.MergedDictionaries?.Clear();
 
         // Add appropriate theme
         if (ThemeOption == ThemeOption.Dark)
         {
-            mergedDictionaries?.Add(new ResourceDictionary
+            Application.Current.Resources.MergedDictionaries?.Add(new ResourceDictionary
             {
                 Source = new Uri("Resources/Styles/DarkMode.xaml", UriKind.Relative)
             });
         }
         else if (ThemeOption == ThemeOption.Light)
         {
-            mergedDictionaries?.Add(new ResourceDictionary
+            Application.Current.Resources.MergedDictionaries?.Add(new ResourceDictionary
             {
                 Source = new Uri("Resources/Styles/LightMode.xaml", UriKind.Relative)
             });
         }
-        else if (ThemeOption == ThemeOption.Light)
+        else if (ThemeOption == ThemeOption.Ocean)
         {
-            mergedDictionaries?.Add(new ResourceDictionary
-            {
-                Source = new Uri("Resources/Styles/OceanMode.xaml", UriKind.Relative)
-            });
+            Application.Current.Resources.MergedDictionaries?.Add(new OceanMode());
         }
         else
         {
@@ -100,7 +97,7 @@ internal sealed class ThemeService : IThemeService
             uri = new Uri("Resources/Styles/WinUIMode.xaml", UriKind.Relative);
 #endif
 
-            mergedDictionaries?.Add(new ResourceDictionary
+            Application.Current.Resources.MergedDictionaries?.Add(new ResourceDictionary
             {
                 Source = uri
             });
